@@ -9,7 +9,7 @@ ENV = 'dev'
 
 if ENV == 'dev':
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:admin@localhost/user'
+    app.config['SQLALCHEMY_DATABASE_URI'] = ''# link to database
 else:
     app.debug = False
     app.config['SQLALCHEMY_DATABASE_URI'] = ''
